@@ -98,8 +98,8 @@
 			isa = PBXGroup;
 			children = (
 				847248AF27884BFE00E25884 /* Main.storyboard */,
-				847248B427884C0200E25884 /* LaunchScreen.storyboard */,
 				847248C6278855E800E25884 /* LabelSettings.storyboard */,
+				847248B427884C0200E25884 /* LaunchScreen.storyboard */,
 				847248C82788560200E25884 /* ViewSettings.storyboard */,
 			);
 			path = StoryBoards;
