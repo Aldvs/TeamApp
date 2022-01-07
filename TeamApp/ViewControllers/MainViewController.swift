@@ -7,10 +7,10 @@
 
 import UIKit
 
-protocol SettingsLabeleAndViewControllerDelegate {
+@objc protocol SettingsLabeleAndViewControllerDelegate {
     
-    func setColor(_ color: UIColor)
-    func setColors(_ fontColor: UIColor, _ backGroundColor: UIColor)
+    @objc optional func setColor(_ color: UIColor)
+    @objc optional func setColors(_ fontColor: UIColor, _ backGroundColor: UIColor)
     
 }
 
