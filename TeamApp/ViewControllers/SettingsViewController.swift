@@ -10,7 +10,6 @@ import UIKit
 class SettingsViewController: UIViewController {
 
     // MARK: - IB Outlets
-    
     @IBOutlet weak var colorView: UIView!
     
     @IBOutlet weak var redLabel: UILabel!
@@ -28,7 +27,10 @@ class SettingsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        colorView.layer.cornerRadius = 15
+        
+        
     }
     
 }
