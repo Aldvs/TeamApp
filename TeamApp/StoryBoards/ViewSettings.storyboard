@@ -141,6 +141,18 @@
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="iAf-z9-aWx" secondAttribute="trailing" constant="16" id="zKQ-jK-B3c"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="blueLabel" destination="KtY-ls-t5b" id="L1c-R1-hRY"/>
+                        <outlet property="blueSlider" destination="TMQ-1b-Zed" id="fsW-hl-EVy"/>
+                        <outlet property="blueTextField" destination="Jsy-I3-AGr" id="rvH-of-YaG"/>
+                        <outlet property="colorView" destination="iAf-z9-aWx" id="pZf-2f-Bsd"/>
+                        <outlet property="greenLabel" destination="wY6-a9-eVA" id="PuV-cc-TZ0"/>
+                        <outlet property="greenSlider" destination="jUF-ld-H57" id="YG4-ed-5oo"/>
+                        <outlet property="greenTextField" destination="pev-IL-nhL" id="ojg-rz-4fl"/>
+                        <outlet property="redLabel" destination="J4u-lc-kPF" id="eoN-G9-mvr"/>
+                        <outlet property="redSlider" destination="FIL-MT-xns" id="qeg-et-i4a"/>
+                        <outlet property="redTextField" destination="lhx-c3-AVT" id="f5B-2c-m3E"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
