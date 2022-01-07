@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Label View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TeamApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="LabelViewController" customModule="TeamApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -73,7 +73,7 @@
         <!--LabelSettings-->
         <scene sceneID="Cua-Qd-55q">
             <objects>
-                <viewControllerPlaceholder storyboardName="LabelSettings" id="wC2-dW-mpA" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardIdentifier="LabelSettings" storyboardName="LabelSettings" id="wC2-dW-mpA" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JtK-h1-5pd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="945" y="602"/>
@@ -81,7 +81,7 @@
         <!--ViewSettings-->
         <scene sceneID="8Ss-gi-w6F">
             <objects>
-                <viewControllerPlaceholder storyboardName="ViewSettings" id="231-HV-42r" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardIdentifier="ViewSettings" storyboardName="ViewSettings" id="231-HV-42r" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="EY9-1D-pY1"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="67w-dx-KCX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
