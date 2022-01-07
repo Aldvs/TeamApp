@@ -13,6 +13,8 @@
 		847248B127884BFE00E25884 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 847248AF27884BFE00E25884 /* Main.storyboard */; };
 		847248B327884C0200E25884 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 847248B227884C0200E25884 /* Assets.xcassets */; };
 		847248B627884C0200E25884 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 847248B427884C0200E25884 /* LaunchScreen.storyboard */; };
+		847248C7278855E800E25884 /* LabelSettings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 847248C6278855E800E25884 /* LabelSettings.storyboard */; };
+		847248C92788560200E25884 /* ViewSettings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 847248C82788560200E25884 /* ViewSettings.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		847248B227884C0200E25884 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		847248B527884C0200E25884 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		847248B727884C0200E25884 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		847248C6278855E800E25884 /* LabelSettings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LabelSettings.storyboard; sourceTree = "<group>"; };
+		847248C82788560200E25884 /* ViewSettings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ViewSettings.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,49 @@
 		847248A827884BFE00E25884 /* TeamApp */ = {
 			isa = PBXGroup;
 			children = (
-				847248A927884BFE00E25884 /* AppDelegate.swift */,
-				847248AB27884BFE00E25884 /* SceneDelegate.swift */,
-				847248AD27884BFE00E25884 /* ViewController.swift */,
-				847248AF27884BFE00E25884 /* Main.storyboard */,
-				847248B227884C0200E25884 /* Assets.xcassets */,
-				847248B427884C0200E25884 /* LaunchScreen.storyboard */,
-				847248B727884C0200E25884 /* Info.plist */,
+				847248BF27884C4E00E25884 /* SupportFiles */,
+				847248C027884C5A00E25884 /* ViewControllers */,
+				847248C127884C7200E25884 /* StoryBoards */,
+				847248BE27884C2D00E25884 /* Resources */,
 			);
 			path = TeamApp;
+			sourceTree = "<group>";
+		};
+		847248BE27884C2D00E25884 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				847248B227884C0200E25884 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		847248BF27884C4E00E25884 /* SupportFiles */ = {
+			isa = PBXGroup;
+			children = (
+				847248A927884BFE00E25884 /* AppDelegate.swift */,
+				847248AB27884BFE00E25884 /* SceneDelegate.swift */,
+				847248B727884C0200E25884 /* Info.plist */,
+			);
+			path = SupportFiles;
+			sourceTree = "<group>";
+		};
+		847248C027884C5A00E25884 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				847248AD27884BFE00E25884 /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		847248C127884C7200E25884 /* StoryBoards */ = {
+			isa = PBXGroup;
+			children = (
+				847248AF27884BFE00E25884 /* Main.storyboard */,
+				847248B427884C0200E25884 /* LaunchScreen.storyboard */,
+				847248C6278855E800E25884 /* LabelSettings.storyboard */,
+				847248C82788560200E25884 /* ViewSettings.storyboard */,
+			);
+			path = StoryBoards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +163,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				847248C7278855E800E25884 /* LabelSettings.storyboard in Resources */,
+				847248C92788560200E25884 /* ViewSettings.storyboard in Resources */,
 				847248B627884C0200E25884 /* LaunchScreen.storyboard in Resources */,
 				847248B327884C0200E25884 /* Assets.xcassets in Resources */,
 				847248B127884BFE00E25884 /* Main.storyboard in Resources */,
@@ -290,7 +330,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = TeamApp/Info.plist;
+				INFOPLIST_FILE = TeamApp/SupportFiles/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -317,7 +357,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = TeamApp/Info.plist;
+				INFOPLIST_FILE = TeamApp/SupportFiles/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
