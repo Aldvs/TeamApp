@@ -11,7 +11,7 @@
 		4B9C29932788AD1E0058C1A4 /* LabelSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9C29922788AD1E0058C1A4 /* LabelSettingsViewController.swift */; };
 		847248AA27884BFE00E25884 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847248A927884BFE00E25884 /* AppDelegate.swift */; };
 		847248AC27884BFE00E25884 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847248AB27884BFE00E25884 /* SceneDelegate.swift */; };
-		847248AE27884BFE00E25884 /* LabelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847248AD27884BFE00E25884 /* LabelViewController.swift */; };
+		847248AE27884BFE00E25884 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847248AD27884BFE00E25884 /* MainViewController.swift */; };
 		847248B127884BFE00E25884 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 847248AF27884BFE00E25884 /* Main.storyboard */; };
 		847248B327884C0200E25884 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 847248B227884C0200E25884 /* Assets.xcassets */; };
 		847248B627884C0200E25884 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 847248B427884C0200E25884 /* LaunchScreen.storyboard */; };
@@ -25,7 +25,7 @@
 		847248A627884BFE00E25884 /* TeamApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TeamApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		847248A927884BFE00E25884 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		847248AB27884BFE00E25884 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		847248AD27884BFE00E25884 /* LabelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelViewController.swift; sourceTree = "<group>"; };
+		847248AD27884BFE00E25884 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		847248B027884BFE00E25884 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		847248B227884C0200E25884 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		847248B527884C0200E25884 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -93,7 +93,7 @@
 		847248C027884C5A00E25884 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				847248AD27884BFE00E25884 /* LabelViewController.swift */,
+				847248AD27884BFE00E25884 /* MainViewController.swift */,
 				285FB0EE27889BE3005F895F /* SettingsViewController.swift */,
 				4B9C29922788AD1E0058C1A4 /* LabelSettingsViewController.swift */,
 			);
@@ -184,7 +184,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				847248AE27884BFE00E25884 /* LabelViewController.swift in Sources */,
+				847248AE27884BFE00E25884 /* MainViewController.swift in Sources */,
 				4B9C29932788AD1E0058C1A4 /* LabelSettingsViewController.swift in Sources */,
 				847248AA27884BFE00E25884 /* AppDelegate.swift in Sources */,
 				847248AC27884BFE00E25884 /* SceneDelegate.swift in Sources */,
