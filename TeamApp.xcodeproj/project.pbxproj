@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		285FB0EF27889BE3005F895F /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285FB0EE27889BE3005F895F /* SettingsViewController.swift */; };
+		4B9C29932788AD1E0058C1A4 /* LabelSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9C29922788AD1E0058C1A4 /* LabelSettingsViewController.swift */; };
 		847248AA27884BFE00E25884 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847248A927884BFE00E25884 /* AppDelegate.swift */; };
 		847248AC27884BFE00E25884 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847248AB27884BFE00E25884 /* SceneDelegate.swift */; };
 		847248AE27884BFE00E25884 /* LabelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847248AD27884BFE00E25884 /* LabelViewController.swift */; };
@@ -20,6 +21,7 @@
 
 /* Begin PBXFileReference section */
 		285FB0EE27889BE3005F895F /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		4B9C29922788AD1E0058C1A4 /* LabelSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelSettingsViewController.swift; sourceTree = "<group>"; };
 		847248A627884BFE00E25884 /* TeamApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TeamApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		847248A927884BFE00E25884 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		847248AB27884BFE00E25884 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -91,8 +93,9 @@
 		847248C027884C5A00E25884 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				847248AD27884BFE00E25884 /* ViewController.swift */,
+				847248AD27884BFE00E25884 /* LabelViewController.swift */,
 				285FB0EE27889BE3005F895F /* SettingsViewController.swift */,
+				4B9C29922788AD1E0058C1A4 /* LabelSettingsViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -182,6 +185,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				847248AE27884BFE00E25884 /* LabelViewController.swift in Sources */,
+				4B9C29932788AD1E0058C1A4 /* LabelSettingsViewController.swift in Sources */,
 				847248AA27884BFE00E25884 /* AppDelegate.swift in Sources */,
 				847248AC27884BFE00E25884 /* SceneDelegate.swift in Sources */,
 				285FB0EF27889BE3005F895F /* SettingsViewController.swift in Sources */,
