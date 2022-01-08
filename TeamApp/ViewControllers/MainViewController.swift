@@ -33,6 +33,7 @@ class MainViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let colorsVC = segue.destination as? LabelSettingsViewController else { return }
         colorsVC.delegate = self
+        //КАКОЙ ТО ЛИШНИЙ ТЕКСТ
 //        guard let colorVC = segue.destination as? SettingsViewController else { return }
 //        colorVC.delegate = self
 //        colorVC.viewColor = view.backgroundColor
