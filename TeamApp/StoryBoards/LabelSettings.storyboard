@@ -38,6 +38,9 @@
                                             </view>
                                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="tvB-ub-7ZX">
                                                 <rect key="frame" x="305" y="0.0" width="51" height="25"/>
+                                                <connections>
+                                                    <action selector="switchesAction:" destination="Y6W-OH-hqX" eventType="valueChanged" id="050-SB-Zm1"/>
+                                                </connections>
                                             </switch>
                                         </subviews>
                                     </stackView>
@@ -60,6 +63,9 @@
                                             </view>
                                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="gVZ-yp-ieZ">
                                                 <rect key="frame" x="305" y="0.0" width="51" height="25"/>
+                                                <connections>
+                                                    <action selector="switchesAction:" destination="Y6W-OH-hqX" eventType="valueChanged" id="smp-Wl-70m"/>
+                                                </connections>
                                             </switch>
                                         </subviews>
                                     </stackView>
@@ -82,6 +88,9 @@
                                             </view>
                                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="fkq-wl-nSZ">
                                                 <rect key="frame" x="305" y="0.0" width="51" height="25"/>
+                                                <connections>
+                                                    <action selector="switchesAction:" destination="Y6W-OH-hqX" eventType="valueChanged" id="R9f-6Q-FmB"/>
+                                                </connections>
                                             </switch>
                                         </subviews>
                                     </stackView>
@@ -104,6 +113,9 @@
                                             </view>
                                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="qRf-Cm-eTc">
                                                 <rect key="frame" x="305" y="0.0" width="51" height="25"/>
+                                                <connections>
+                                                    <action selector="switchesAction:" destination="Y6W-OH-hqX" eventType="valueChanged" id="PZe-hg-vdy"/>
+                                                </connections>
                                             </switch>
                                         </subviews>
                                     </stackView>
@@ -126,6 +138,9 @@
                                             </view>
                                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="hT0-vk-qij">
                                                 <rect key="frame" x="305" y="0.0" width="51" height="25"/>
+                                                <connections>
+                                                    <action selector="switchesAction:" destination="Y6W-OH-hqX" eventType="valueChanged" id="Iox-FV-E2e"/>
+                                                </connections>
                                             </switch>
                                         </subviews>
                                     </stackView>
@@ -148,6 +163,9 @@
                                             </view>
                                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="8of-cW-cZ8">
                                                 <rect key="frame" x="305" y="0.0" width="51" height="25"/>
+                                                <connections>
+                                                    <action selector="switchesAction:" destination="Y6W-OH-hqX" eventType="valueChanged" id="Kea-c9-Qb8"/>
+                                                </connections>
                                             </switch>
                                         </subviews>
                                     </stackView>
@@ -170,6 +188,9 @@
                                             </view>
                                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Agt-aK-ekR">
                                                 <rect key="frame" x="305" y="0.0" width="51" height="25"/>
+                                                <connections>
+                                                    <action selector="switchesAction:" destination="Y6W-OH-hqX" eventType="valueChanged" id="YKc-Mr-uQb"/>
+                                                </connections>
                                             </switch>
                                         </subviews>
                                     </stackView>
@@ -182,9 +203,12 @@
                                 <buttonConfiguration key="configuration" style="plain" title="Save">
                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="20"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="saveButtonPressed" destination="Y6W-OH-hqX" eventType="touchUpInside" id="HQU-lC-fMb"/>
+                                </connections>
                             </button>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="8g2-JV-u5O">
-                                <rect key="frame" x="78.5" y="74" width="257" height="32"/>
+                                <rect key="frame" x="30" y="74" width="354" height="32"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="31" id="xwl-aU-Kl6"/>
                                 </constraints>
@@ -192,6 +216,9 @@
                                     <segment title="Background color"/>
                                     <segment title="Font color"/>
                                 </segments>
+                                <connections>
+                                    <action selector="segmentedControlAction" destination="Y6W-OH-hqX" eventType="valueChanged" id="9sT-am-dvu"/>
+                                </connections>
                             </segmentedControl>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
@@ -202,11 +229,30 @@
                             <constraint firstItem="oRG-zo-u4q" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="C5B-W7-6AV"/>
                             <constraint firstItem="PDa-l5-mz1" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="GjN-Ek-uoC"/>
                             <constraint firstItem="oRG-zo-u4q" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" constant="-25" id="SYd-zt-B8e"/>
+                            <constraint firstItem="8g2-JV-u5O" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="30" id="WBH-VM-Ggh"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="oRG-zo-u4q" secondAttribute="trailing" constant="30" id="bDt-Sm-Nro"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="8g2-JV-u5O" secondAttribute="trailing" constant="30" id="i4b-hV-sco"/>
                             <constraint firstItem="8g2-JV-u5O" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="jlD-e0-cfh"/>
                             <constraint firstItem="8g2-JV-u5O" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="30" id="uFK-X7-I4d"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="blueLabel" destination="DLu-4x-IGe" id="5DR-tU-RSK"/>
+                        <outlet property="blueSwitch" destination="hT0-vk-qij" id="KPx-Ek-Sck"/>
+                        <outlet property="greenLabel" destination="kFI-Yd-LgB" id="RUD-nw-3zM"/>
+                        <outlet property="greenSwitch" destination="qRf-Cm-eTc" id="PPz-Er-XNh"/>
+                        <outlet property="orangeLabel" destination="lVK-5c-URo" id="Jnu-Yz-4VA"/>
+                        <outlet property="orangeSwitch" destination="gVZ-yp-ieZ" id="2Kd-kq-9nL"/>
+                        <outlet property="pinkLabel" destination="feQ-qq-Nlg" id="gVg-ny-Vov"/>
+                        <outlet property="pinkSwitch" destination="Agt-aK-ekR" id="kKx-xJ-fpB"/>
+                        <outlet property="purpleLabel" destination="Lde-88-PsZ" id="LXc-DM-uvs"/>
+                        <outlet property="purpleSwitch" destination="8of-cW-cZ8" id="Tte-1V-c40"/>
+                        <outlet property="redLabel" destination="c3c-D4-uFe" id="ZnE-wP-CtU"/>
+                        <outlet property="redSwitch" destination="tvB-ub-7ZX" id="VRQ-LC-yck"/>
+                        <outlet property="segmentedControl" destination="8g2-JV-u5O" id="ja1-fv-3cc"/>
+                        <outlet property="yellowLabel" destination="ErP-eT-znV" id="sxW-LG-KBp"/>
+                        <outlet property="yellowSwitch" destination="fkq-wl-nSZ" id="MnB-uZ-gVr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
