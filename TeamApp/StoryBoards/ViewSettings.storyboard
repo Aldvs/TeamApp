@@ -89,12 +89,21 @@
                                         <subviews>
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="FIL-MT-xns">
                                                 <rect key="frame" x="-2" y="0.0" width="220" height="31"/>
+                                                <connections>
+                                                    <action selector="rgbSlider" destination="Y6W-OH-hqX" eventType="valueChanged" id="VlJ-5T-gx2"/>
+                                                </connections>
                                             </slider>
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="jUF-ld-H57">
                                                 <rect key="frame" x="-2" y="38" width="220" height="31"/>
+                                                <connections>
+                                                    <action selector="rgbSlider" destination="Y6W-OH-hqX" eventType="valueChanged" id="1Ki-Fb-5Q1"/>
+                                                </connections>
                                             </slider>
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="TMQ-1b-Zed">
                                                 <rect key="frame" x="-2" y="76" width="220" height="31"/>
+                                                <connections>
+                                                    <action selector="rgbSlider" destination="Y6W-OH-hqX" eventType="valueChanged" id="MWb-wf-bJg"/>
+                                                </connections>
                                             </slider>
                                         </subviews>
                                     </stackView>
