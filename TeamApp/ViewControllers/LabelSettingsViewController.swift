@@ -9,6 +9,7 @@ import UIKit
 
 class LabelSettingsViewController: UIViewController {
   
+  // MARK: - IB Outlets
   @IBOutlet var redSwitch: UISwitch!
   @IBOutlet var orangeSwitch: UISwitch!
   @IBOutlet var yellowSwitch: UISwitch!
@@ -18,16 +19,12 @@ class LabelSettingsViewController: UIViewController {
   @IBOutlet var pinkSwitch: UISwitch!
   @IBOutlet var segmentedControl: UISegmentedControl!
   
-  
+  // MARK: - Public Properties
   var delegate: SettingsLabeleAndViewControllerDelegate!
-  var selectedColor: UIColor!
   var backgroundColor: UIColor?
   var fontColor: UIColor?
   
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
-
+  // MARK: - IB Actions
   @IBAction func segmentedControlAction() {
     switch segmentedControl.selectedSegmentIndex {
     case 0:
@@ -35,10 +32,11 @@ class LabelSettingsViewController: UIViewController {
     default:
       offOtherSwitches(nil)
     }
-
-
   }
+  
   @IBAction func switchesAction(_ sender: UISwitch) {
+    var selectedColor: UIColor!
+    
     offOtherSwitches(sender)
         switch sender {
         case redSwitch:
@@ -63,6 +61,7 @@ class LabelSettingsViewController: UIViewController {
           selectedColor = .systemPink
           pinkSwitch.onTintColor = .systemPink
         }
+    
         switch segmentedControl.selectedSegmentIndex {
         case 0:
           backgroundColor = selectedColor
@@ -79,9 +78,10 @@ class LabelSettingsViewController: UIViewController {
   
 }
 
+// MARK: - Private Methods
 extension LabelSettingsViewController {
+  
   private func offOtherSwitches (_ choosenSwitch: UISwitch?){
-    
     if choosenSwitch != redSwitch {
       redSwitch.isOn = false
     }
