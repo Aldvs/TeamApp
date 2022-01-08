@@ -31,10 +31,16 @@ class MainViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let colorsVC = segue.destination as? LabelSettingsViewController else { return }
+        colorsVC.delegate = self
+//        guard let colorVC = segue.destination as? SettingsViewController else { return }
+//        colorVC.delegate = self
+//        colorVC.viewColor = view.backgroundColor
     }
     
     //MARK: - IB Actions
     @IBAction func segmentedControlAction() {
+        
         switch segmentedControl.selectedSegmentIndex {
         case 0:
             settingsButton.isHidden = true
@@ -44,7 +50,6 @@ class MainViewController: UIViewController {
             label.isHidden = false
         }
     }
-    
 }
 
 //MARK: - ColorDelegate
