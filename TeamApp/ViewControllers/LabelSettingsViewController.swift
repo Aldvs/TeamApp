@@ -112,13 +112,13 @@ extension LabelSettingsViewController {
     if choosenSwitch != redSwitch {
       redSwitch.isOn = false
     }
-    if choosenSwitch !== orangeSwitch {
+    if choosenSwitch != orangeSwitch {
       orangeSwitch.isOn = false
     }
-    if choosenSwitch !== yellowSwitch {
+    if choosenSwitch != yellowSwitch {
       yellowSwitch.isOn = false
     }
-    if choosenSwitch !== greenSwitch {
+    if choosenSwitch != greenSwitch {
       greenSwitch.isOn = false
     }
     if choosenSwitch != blueSwitch {
