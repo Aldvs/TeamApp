@@ -31,6 +31,8 @@ class LabelSettingsViewController: UIViewController {
   var delegate: SettingsLabeleAndViewControllerDelegate!
   var backgroundColor: UIColor?
   var fontColor: UIColor?
+  var backgroundSwitch: UISwitch?
+  var fontSwitch: UISwitch?
   
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -49,9 +51,11 @@ class LabelSettingsViewController: UIViewController {
   @IBAction func segmentedControlAction() {
     switch segmentedControl.selectedSegmentIndex {
     case 0:
-      offOtherSwitches(nil)
+      backgroundSwitch?.isOn = true
+      offOtherSwitches(backgroundSwitch)
     default:
-      offOtherSwitches(nil)
+      fontSwitch?.isOn = true
+      offOtherSwitches(fontSwitch)
     }
   }
   
@@ -86,8 +90,10 @@ class LabelSettingsViewController: UIViewController {
         switch segmentedControl.selectedSegmentIndex {
         case 0:
           backgroundColor = selectedColor
+          backgroundSwitch = sender
         default:
           fontColor = selectedColor
+          fontSwitch = sender
         }
     }
   
