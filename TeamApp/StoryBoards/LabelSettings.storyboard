@@ -237,13 +237,20 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="blueLabel" destination="DLu-4x-IGe" id="5DR-tU-RSK"/>
                         <outlet property="blueSwitch" destination="hT0-vk-qij" id="KPx-Ek-Sck"/>
+                        <outlet property="greenLabel" destination="kFI-Yd-LgB" id="RUD-nw-3zM"/>
                         <outlet property="greenSwitch" destination="qRf-Cm-eTc" id="PPz-Er-XNh"/>
+                        <outlet property="orangeLabel" destination="lVK-5c-URo" id="Jnu-Yz-4VA"/>
                         <outlet property="orangeSwitch" destination="gVZ-yp-ieZ" id="2Kd-kq-9nL"/>
+                        <outlet property="pinkLabel" destination="feQ-qq-Nlg" id="gVg-ny-Vov"/>
                         <outlet property="pinkSwitch" destination="Agt-aK-ekR" id="kKx-xJ-fpB"/>
+                        <outlet property="purpleLabel" destination="Lde-88-PsZ" id="LXc-DM-uvs"/>
                         <outlet property="purpleSwitch" destination="8of-cW-cZ8" id="Tte-1V-c40"/>
+                        <outlet property="redLabel" destination="c3c-D4-uFe" id="ZnE-wP-CtU"/>
                         <outlet property="redSwitch" destination="tvB-ub-7ZX" id="VRQ-LC-yck"/>
                         <outlet property="segmentedControl" destination="8g2-JV-u5O" id="ja1-fv-3cc"/>
+                        <outlet property="yellowLabel" destination="ErP-eT-znV" id="sxW-LG-KBp"/>
                         <outlet property="yellowSwitch" destination="fkq-wl-nSZ" id="MnB-uZ-gVr"/>
                     </connections>
                 </viewController>
