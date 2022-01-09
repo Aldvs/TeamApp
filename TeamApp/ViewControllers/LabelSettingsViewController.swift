@@ -36,15 +36,16 @@ class LabelSettingsViewController: UIViewController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    let radiusOfCorners: CGFloat = 4
     
-    redLabel.layer.cornerRadius = radiusOfCorners
-    orangeLabel.layer.cornerRadius = radiusOfCorners
-    yellowLabel.layer.cornerRadius = radiusOfCorners
-    greenLabel.layer.cornerRadius = radiusOfCorners
-    blueLabel.layer.cornerRadius = radiusOfCorners
-    purpleLabel.layer.cornerRadius = radiusOfCorners
-    pinkLabel.layer.cornerRadius = radiusOfCorners
+    redLabel.layer.cornerRadius = 4
+    orangeLabel.layer.cornerRadius = 4
+    yellowLabel.layer.cornerRadius = 4
+    greenLabel.layer.cornerRadius = 4
+    blueLabel.layer.cornerRadius = 4
+    purpleLabel.layer.cornerRadius = 4
+    pinkLabel.layer.cornerRadius = 4
+    
+    setSwitchesforBackground(backgroundColor)
   }
   
   // MARK: - IB Actions
@@ -53,9 +54,11 @@ class LabelSettingsViewController: UIViewController {
     case 0:
       backgroundSwitch?.isOn = true
       offOtherSwitches(backgroundSwitch)
+      setSwitchesforBackground(backgroundColor)
     default:
       fontSwitch?.isOn = true
       offOtherSwitches(fontSwitch)
+      setSwitchesforText(fontColor)
     }
   }
   
@@ -82,9 +85,10 @@ class LabelSettingsViewController: UIViewController {
         case purpleSwitch:
           selectedColor = .purple
           purpleSwitch.onTintColor = .purple
-        default:
+        case pinkSwitch:
           selectedColor = .systemPink
           pinkSwitch.onTintColor = .systemPink
+        default:  break
         }
     
         switch segmentedControl.selectedSegmentIndex {
@@ -129,6 +133,61 @@ extension LabelSettingsViewController {
     }
     if choosenSwitch != pinkSwitch {
       pinkSwitch.isOn = false
+    }
+  }
+  
+  private func setSwitchesforBackground ( _ backgroundColor: UIColor?) {
+    switch backgroundColor {
+    case UIColor.red:
+      redSwitch.isOn = true
+      redSwitch.onTintColor = .red
+    case UIColor.orange:
+      orangeSwitch.isOn = true
+      orangeSwitch.onTintColor = .orange
+    case UIColor.yellow:
+      yellowSwitch.isOn = true
+      yellowSwitch.onTintColor = .yellow
+    case UIColor.green:
+      greenSwitch.isOn = true
+      greenSwitch.onTintColor = .green
+    case UIColor.blue:
+      blueSwitch.isOn = true
+      blueSwitch.onTintColor = .blue
+    case UIColor.purple:
+      purpleSwitch.isOn = true
+    case UIColor.systemPink:
+      pinkSwitch.isOn = true
+      purpleSwitch.onTintColor = .purple
+    default:
+      offOtherSwitches(nil)
+    }
+  }
+  
+  private func setSwitchesforText ( _ textColor: UIColor?) {
+    switch textColor {
+    case UIColor.red:
+      redSwitch.isOn = true
+      redSwitch.onTintColor = .red
+    case UIColor.orange:
+      orangeSwitch.isOn = true
+      orangeSwitch.onTintColor = .orange
+    case UIColor.yellow:
+      yellowSwitch.isOn = true
+      yellowSwitch.onTintColor = .yellow
+    case UIColor.green:
+      greenSwitch.isOn = true
+      greenSwitch.onTintColor = .green
+    case UIColor.blue:
+      blueSwitch.isOn = true
+      blueSwitch.onTintColor = .blue
+    case UIColor.purple:
+      purpleSwitch.isOn = true
+      purpleSwitch.onTintColor = .purple
+    case UIColor.systemPink:
+      pinkSwitch.isOn = true
+      pinkSwitch.onTintColor = .systemPink
+    default:
+      break
     }
   }
   
