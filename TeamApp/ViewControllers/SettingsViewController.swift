@@ -31,7 +31,7 @@ class SettingsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        colorView.layer.cornerRadius = 15
+        colorView.layer.cornerRadius = 18
         colorView.backgroundColor = viewColor
         
     
@@ -61,8 +61,13 @@ class SettingsViewController: UIViewController {
         setColor()
     }
     
-    // MARK: - Private Methods
+    @IBAction func doneButtonPressed() {
+        delegate?.setColor?(colorView.backgroundColor ?? .white)
+        dismiss(animated: true)
+    }
     
+
+    // MARK: - Private Methods
     private func setColor() {
         colorView.backgroundColor = UIColor(
             red: CGFloat(redSlider.value),
@@ -103,4 +108,8 @@ class SettingsViewController: UIViewController {
         String(format: "%.2f", slider.value)
     }
 }
+    // MARK: - UITextFieldDelegate
+//extension SettingsViewController: UITextFieldDelegate {
+//
+//}
 

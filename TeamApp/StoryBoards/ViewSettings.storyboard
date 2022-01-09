@@ -28,6 +28,9 @@
                                 <state key="normal" title="Done">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="doneButtonPressed" destination="Y6W-OH-hqX" eventType="touchUpInside" id="bQG-cJ-Azn"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="0G6-8k-NhR">
                                 <rect key="frame" x="16" y="310" width="343" height="122"/>
@@ -90,19 +93,19 @@
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="FIL-MT-xns">
                                                 <rect key="frame" x="-2" y="0.0" width="220" height="31"/>
                                                 <connections>
-                                                    <action selector="rgbSlider" destination="Y6W-OH-hqX" eventType="valueChanged" id="VlJ-5T-gx2"/>
+                                                    <action selector="rgbSlider:" destination="Y6W-OH-hqX" eventType="valueChanged" id="3MH-tg-eC5"/>
                                                 </connections>
                                             </slider>
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="jUF-ld-H57">
                                                 <rect key="frame" x="-2" y="38" width="220" height="31"/>
                                                 <connections>
-                                                    <action selector="rgbSlider" destination="Y6W-OH-hqX" eventType="valueChanged" id="1Ki-Fb-5Q1"/>
+                                                    <action selector="rgbSlider:" destination="Y6W-OH-hqX" eventType="valueChanged" id="OT0-ZY-trY"/>
                                                 </connections>
                                             </slider>
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="TMQ-1b-Zed">
                                                 <rect key="frame" x="-2" y="76" width="220" height="31"/>
                                                 <connections>
-                                                    <action selector="rgbSlider" destination="Y6W-OH-hqX" eventType="valueChanged" id="MWb-wf-bJg"/>
+                                                    <action selector="rgbSlider:" destination="Y6W-OH-hqX" eventType="valueChanged" id="JIH-nf-Y6A"/>
                                                 </connections>
                                             </slider>
                                         </subviews>
