@@ -34,7 +34,8 @@ class SettingsViewController: UIViewController {
         colorView.layer.cornerRadius = 18
         colorView.backgroundColor = viewColor
         
-    
+        
+        
         setSliders()
         setValue(for: redLabel, greenLabel, blueLabel)
         setValue(for: redTextField, greenTextField, blueTextField)
@@ -61,13 +62,17 @@ class SettingsViewController: UIViewController {
         setColor()
     }
     
+    
     @IBAction func doneButtonPressed() {
-        delegate?.setColor?(colorView.backgroundColor ?? .white)
-        dismiss(animated: true)
+        delegate?.setColor!(colorView.backgroundColor ?? .white)
+        navigationController?.popViewController(animated: true)
+        
     }
     
-
+}
     // MARK: - Private Methods
+extension SettingsViewController {
+    
     private func setColor() {
         colorView.backgroundColor = UIColor(
             red: CGFloat(redSlider.value),
@@ -107,9 +112,44 @@ class SettingsViewController: UIViewController {
     private func string(from slider: UISlider) -> String {
         String(format: "%.2f", slider.value)
     }
+    
+    private func showAlert(title: String, message: String) {
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "OK", style: .default)
+        alert.addAction(okAction)
+        present(alert, animated: true)
+    }
 }
     // MARK: - UITextFieldDelegate
-//extension SettingsViewController: UITextFieldDelegate {
-//
-//}
+extension SettingsViewController: UITextFieldDelegate {
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        super.touchesBegan(touches, with: event)
+        view.endEditing(true)
+    }
+    
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        
+        guard let text = textField.text else { return }
+        
+        if let currentValue = Float(text) {
+            switch textField {
+            case redTextField:
+                redSlider.setValue(currentValue, animated: true)
+                setValue(for: redLabel)
+            case greenTextField:
+                greenSlider.setValue(currentValue, animated: true)
+                setValue(for: greenLabel)
+            default:
+                blueSlider.setValue(currentValue, animated: true)
+                setValue(for: blueLabel)
+            }
+            
+            setColor()
+            return
+        }
+        
+        showAlert(title: "Wrong format!", message: "Please enter correct value")
+    }
+}
 
