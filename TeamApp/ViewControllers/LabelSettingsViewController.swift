@@ -155,9 +155,10 @@ extension LabelSettingsViewController {
       blueSwitch.onTintColor = .blue
     case UIColor.purple:
       purpleSwitch.isOn = true
+      purpleSwitch.onTintColor = .purple
     case UIColor.systemPink:
       pinkSwitch.isOn = true
-      purpleSwitch.onTintColor = .purple
+      pinkSwitch.onTintColor = .systemPink
     default:
       offOtherSwitches(nil)
     }
@@ -187,7 +188,7 @@ extension LabelSettingsViewController {
       pinkSwitch.isOn = true
       pinkSwitch.onTintColor = .systemPink
     default:
-      break
+      offOtherSwitches(nil)
     }
   }
   
