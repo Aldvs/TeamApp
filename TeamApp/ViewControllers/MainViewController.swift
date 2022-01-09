@@ -31,12 +31,19 @@ class MainViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+          prepareOne(for: segue)
+          prepareTwo(for: segue)
+        }
+      
+      private func prepareOne(for segue: UIStoryboardSegue) {
         guard let colorsVC = segue.destination as? LabelSettingsViewController else { return }
-        colorsVC.delegate = self
+          colorsVC.delegate = self
+      }
+      private func prepareTwo(for segue: UIStoryboardSegue) {
         guard let colorVC = segue.destination as? SettingsViewController else { return }
-        colorVC.delegate = self
-        colorVC.viewColor = view.backgroundColor
-    }
+          colorVC.delegate = self
+          colorVC.viewColor = view.backgroundColor
+      }
     
     //MARK: - IB Actions
     @IBAction func segmentedControlAction() {
