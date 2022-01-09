@@ -62,7 +62,7 @@
                         </segmentedControl>
                         <barButtonItem key="rightBarButtonItem" systemItem="compose" id="uRI-O8-6MJ">
                             <connections>
-                                <segue destination="231-HV-42r" kind="show" id="QKW-7V-5HH"/>
+                                <segue destination="231-HV-42r" kind="show" identifier="settings" id="QKW-7V-5HH"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>

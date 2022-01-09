@@ -31,20 +31,21 @@ class MainViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-          prepareOne(for: segue)
-          prepareTwo(for: segue)
+        
+        if segue.identifier == "settings" {
+            
+            guard let colorVC = segue.destination as? SettingsViewController else { return }
+            colorVC.delegate = self
+            colorVC.viewColor = view.backgroundColor
+        } else {
+                
+                guard let colorsVC = segue.destination as? LabelSettingsViewController else { return }
+                colorsVC.delegate = self
+                colorsVC.backgroundColor = label.backgroundColor
+                colorsVC.fontColor = label.textColor
+            }
         }
       
-      private func prepareOne(for segue: UIStoryboardSegue) {
-        guard let colorsVC = segue.destination as? LabelSettingsViewController else { return }
-          colorsVC.delegate = self
-      }
-      private func prepareTwo(for segue: UIStoryboardSegue) {
-        guard let colorVC = segue.destination as? SettingsViewController else { return }
-          colorVC.delegate = self
-          colorVC.viewColor = view.backgroundColor
-      }
-    
     //MARK: - IB Actions
     @IBAction func segmentedControlAction() {
         
