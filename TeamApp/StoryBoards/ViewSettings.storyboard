@@ -33,7 +33,7 @@
                                     <action selector="doneButtonPressed" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Is6-hM-93z"/>
                                 </connections>
                             </button>
-                            <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="0G6-8k-NhR">
+                            <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="0G6-8k-NhR">
                                 <rect key="frame" x="16" y="310" width="343" height="122"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="jT0-zN-wOw">
@@ -63,7 +63,7 @@
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="nwX-9Q-UWa">
-                                        <rect key="frame" x="45" y="10.5" width="30" height="101"/>
+                                        <rect key="frame" x="68" y="10.5" width="30" height="101"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J4u-lc-kPF">
                                                 <rect key="frame" x="0.0" y="0.0" width="30" height="17"/>
@@ -89,24 +89,24 @@
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="hPs-w6-o5t">
-                                        <rect key="frame" x="76" y="8" width="216" height="106"/>
+                                        <rect key="frame" x="122" y="8" width="147" height="106"/>
                                         <subviews>
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="FIL-MT-xns">
-                                                <rect key="frame" x="-2" y="0.0" width="220" height="31"/>
+                                                <rect key="frame" x="-2" y="0.0" width="151" height="31"/>
                                                 <color key="minimumTrackTintColor" systemColor="systemRedColor"/>
                                                 <connections>
                                                     <action selector="rgbSlider:" destination="Y6W-OH-hqX" eventType="valueChanged" id="3MH-tg-eC5"/>
                                                 </connections>
                                             </slider>
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="jUF-ld-H57">
-                                                <rect key="frame" x="-2" y="38" width="220" height="31"/>
+                                                <rect key="frame" x="-2" y="38" width="151" height="31"/>
                                                 <color key="minimumTrackTintColor" systemColor="systemGreenColor"/>
                                                 <connections>
                                                     <action selector="rgbSlider:" destination="Y6W-OH-hqX" eventType="valueChanged" id="OT0-ZY-trY"/>
                                                 </connections>
                                             </slider>
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="TMQ-1b-Zed">
-                                                <rect key="frame" x="-2" y="76" width="220" height="31"/>
+                                                <rect key="frame" x="-2" y="76" width="151" height="31"/>
                                                 <connections>
                                                     <action selector="rgbSlider:" destination="Y6W-OH-hqX" eventType="valueChanged" id="JIH-nf-Y6A"/>
                                                 </connections>
